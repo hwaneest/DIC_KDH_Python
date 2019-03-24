@@ -6,20 +6,35 @@
 ##### from Republic of Korea (Seoul, South Korea) #####
 #######################################################
 
-# check working directory
+# check current working directory (wd)
 import os
-os.getcwd()   #current working directory
+os.getcwd()
 
 #print(os.path.realpath(__file__)) #'file'
 #print(os.path.dirname(os.path.realpath(__file__)) ) #directory which has 'file'
 
+
 #change working directory
-from PIL import Image
 import os
-os.getcwd()   # show current wd
-from os import chdir  # 작업 위치를 바꾸기 위한 헤드
-chdir('C:\\Users\\username\\Desktop') # 작업 위치 변경
-os.getcwd()
+from os import chdir
+os.getcwd()  # show current wd         
+chdir('C:\\Users\\username\\Desktop')  # change wd
+os.getcwd()  # show changed wd
+
+ 
+## reading files in current wd
+df = pd.read_csv("filename.txt", sep=",")
+df.head(3)  
+
+## reading data using relative path
+df = pd.read_csv(".\data\filename.csv", sep=",")
+df.head(3)
+
+
+##see all objects on memory now
+globals()
+
+
 
 
 
