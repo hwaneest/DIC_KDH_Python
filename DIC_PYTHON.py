@@ -35,6 +35,14 @@ df.head(3)
 globals()
 
 
+#pandas package
+
+#pd.cut()
+ages = [20, 22, 25, 27, 32]
+bins = [18, 25, 30]
+cats = pd.cut(ages, bins)
+cats
+
 
 
 
