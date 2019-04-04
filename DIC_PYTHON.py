@@ -18,6 +18,7 @@ os.getcwd()
 import os
 from os import chdir
 os.getcwd()  # show current wd         
+chdir('./Desktop/dir_name')   #relatively
 chdir('C:\\Users\\username\\Desktop')  # change wd
 os.getcwd()  # show changed wd
 
