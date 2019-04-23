@@ -50,5 +50,5 @@ cats.codes
 cats.value_counts()
 
 
-
-
+#dimension of dataframe or series
+df.shape
