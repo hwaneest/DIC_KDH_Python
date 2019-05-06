@@ -36,6 +36,25 @@ df.head(3)
 globals()
 
 
+## loops
+
+# for loop
+for i in range(1,5) :   #i=1,2,3,4
+    print('before', i)
+    print(i)
+    print('after',i)
+
+
+
+
+
+
+
+
+
+
+
+
 #pandas package
 
 #pd.cut()
